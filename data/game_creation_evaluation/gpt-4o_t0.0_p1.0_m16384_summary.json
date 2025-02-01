@@ -1,0 +1,9 @@
+{
+    "fcr": 0.96,
+    "vcr": 0.49,
+    "w_success": 0.65625,
+    "w_lose": 0.7708333333333334,
+    "reachability": 0.65625,
+    "average_win_lost_ratio": 1.7292559668030607,
+    "average_win_lost_length_ratio": 1.150813342836232
+}

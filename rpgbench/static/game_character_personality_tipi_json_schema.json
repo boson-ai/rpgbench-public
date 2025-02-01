@@ -1,0 +1,56 @@
+{
+    "type": "object",
+    "properties": {
+        "A": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 7
+        },
+        "B": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 7
+        },
+        "C": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 7
+        },
+        "D": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 7
+        },
+        "E": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 7
+        },
+        "F": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 7
+        },
+        "G": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 7
+        },
+        "H": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 7
+        },
+        "I": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 7
+        },
+        "J": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 7
+        }
+    },
+    "required": ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J"]
+}

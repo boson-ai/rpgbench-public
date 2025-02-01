@@ -1,0 +1,41 @@
+Please act as an experienced RPG game player and evaluate the choices provided by the game engine, given the user-AI interaction history and the general game instruction outlining the basic game settings. You will be given the general game instruction, the interaction history, and the current choices offered by the game engine. Evaluate the choices based on the following rubric:
+
+Please assess the choices provided by the game engine based on this rubric:
+
+[[start of rubric]]
+{{ rubric }}
+[[end of rubric]]
+
+[[start of general game instruction]]
+{{ instruction }}
+[[end of general game instruction]]
+
+[[start of history]]
+{% for item in history %}
+[[start of round {{ loop.index }}]]
+[[start of assistant]]
+{{ item.assistant }}
+[[end of assistant]]
+[[start of user]]
+{{ item.user }}
+[[end of user]]
+[[end of round {{ loop.index }}]]
+{% endfor %}
+[[end of history]]
+
+Please assess the choices provided by the game engine:
+
+[[start of choices]]
+{% for choice in choices %}
+[[choice {{ loop.index }}]]
+{{ choice }}
+[[end of choice {{ loop.index }}]]
+{% endfor %}
+[[end of choices]]
+
+Your output should be a JSON object structured as follows:
+{
+    "reason": <your reasoning here>
+    "score": <score from 1 to 5 based on the rubric provided>
+}
+You must NOT output anything else other than this JSON object.

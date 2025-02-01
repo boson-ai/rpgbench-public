@@ -1,0 +1,358 @@
+{
+    "title": "Game Configuration",
+    "type": "object",
+    "required": [
+        "game_world",
+        "player_name",
+        "player_description",
+        "main_npc_name",
+        "main_npc_description",
+        "game_objectives",
+        "scenes",
+        "state_variables",
+        "hidden_variables",
+        "events",
+        "pre_event_checks"
+    ],
+    "properties": {
+        "game_world": {
+            "type": "string"
+        },
+        "player_name": {
+            "type": "string"
+        },
+        "player_description": {
+            "type": "string"
+        },
+        "main_npc_name": {
+            "type": "string"
+        },
+        "main_npc_description": {
+            "type": "object",
+            "required": [
+                "text",
+                "big5_personality_traits",
+                "additional_facts"
+            ],
+            "properties": {
+                "text": {
+                    "type": "string"
+                },
+                "big5_personality_traits": {
+                    "type": "object",
+                    "required": [
+                        "openness",
+                        "conscientiousness",
+                        "extraversion",
+                        "agreeableness",
+                        "neuroticism"
+                    ],
+                    "properties": {
+                        "openness": {
+                            "type": "object",
+                            "required": [
+                                "rate",
+                                "description"
+                            ],
+                            "properties": {
+                                "rate": {
+                                    "type": "number"
+                                },
+                                "description": {
+                                    "type": "string"
+                                }
+                            },
+                            "additionalProperties": false
+                        },
+                        "conscientiousness": {
+                            "type": "object",
+                            "required": [
+                                "rate",
+                                "description"
+                            ],
+                            "properties": {
+                                "rate": {
+                                    "type": "number"
+                                },
+                                "description": {
+                                    "type": "string"
+                                }
+                            },
+                            "additionalProperties": false
+                        },
+                        "extraversion": {
+                            "type": "object",
+                            "required": [
+                                "rate",
+                                "description"
+                            ],
+                            "properties": {
+                                "rate": {
+                                    "type": "number"
+                                },
+                                "description": {
+                                    "type": "string"
+                                }
+                            },
+                            "additionalProperties": false
+                        },
+                        "agreeableness": {
+                            "type": "object",
+                            "required": [
+                                "rate",
+                                "description"
+                            ],
+                            "properties": {
+                                "rate": {
+                                    "type": "number"
+                                },
+                                "description": {
+                                    "type": "string"
+                                }
+                            },
+                            "additionalProperties": false
+                        },
+                        "neuroticism": {
+                            "type": "object",
+                            "required": [
+                                "rate",
+                                "description"
+                            ],
+                            "properties": {
+                                "rate": {
+                                    "type": "number"
+                                },
+                                "description": {
+                                    "type": "string"
+                                }
+                            },
+                            "additionalProperties": false
+                        }
+                    },
+                    "additionalProperties": false
+                },
+                "additional_facts": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                }
+            },
+            "additionalProperties": false
+        },
+        "game_objectives": {
+            "type": "string"
+        },
+        "scenes": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "required": [
+                    "scene_name",
+                    "unique_id",
+                    "background_description",
+                    "scene_type"
+                ],
+                "properties": {
+                    "scene_name": {
+                        "type": "string"
+                    },
+                    "unique_id": {
+                        "type": "string"
+                    },
+                    "background_description": {
+                        "type": "string"
+                    },
+                    "scene_type": {
+                        "type": "string"
+                    }
+                },
+                "additionalProperties": false
+            }
+        },
+        "state_variables": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "required": [
+                    "value_name",
+                    "unique_id",
+                    "description",
+                    "initial_value",
+                    "min_value",
+                    "max_value"
+                ],
+                "properties": {
+                    "value_name": {
+                        "type": "string"
+                    },
+                    "unique_id": {
+                        "type": "string"
+                    },
+                    "description": {
+                        "type": "string"
+                    },
+                    "initial_value": {
+                        "type": "string"
+                    },
+                    "min_value": {
+                        "type": "string"
+                    },
+                    "max_value": {
+                        "type": "string"
+                    }
+                },
+                "additionalProperties": false
+            }
+        },
+        "hidden_variables": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "required": [
+                    "value_name",
+                    "unique_id",
+                    "description",
+                    "min_value",
+                    "max_value"
+                ],
+                "properties": {
+                    "value_name": {
+                        "type": "string"
+                    },
+                    "unique_id": {
+                        "type": "string"
+                    },
+                    "description": {
+                        "type": "string"
+                    },
+                    "initial_value": {
+                        "type": "string"
+                    },
+                    "min_value": {
+                        "type": "string"
+                    },
+                    "max_value": {
+                        "type": "string"
+                    }
+                },
+                "additionalProperties": false
+            },
+            "minItems": 2,
+            "contains": {
+                "properties": {
+                    "value_name": {
+                        "enum": [
+                            "has_succeeded",
+                            "has_failed"
+                        ]
+                    }
+                }
+            }
+        },
+        "events": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "required": [
+                    "event_name",
+                    "unique_id",
+                    "scene",
+                    "entering_condition",
+                    "succeed_condition",
+                    "succeed_effect",
+                    "fail_effect"
+                ],
+                "properties": {
+                    "event_name": {
+                        "type": "string"
+                    },
+                    "unique_id": {
+                        "type": "string"
+                    },
+                    "scene": {
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        }
+                    },
+                    "entering_condition": {
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        }
+                    },
+                    "succeed_condition": {
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        }
+                    },
+                    "succeed_effect": {
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        }
+                    },
+                    "fail_effect": {
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        }
+                    },
+                    "explanations": {
+                        "type": "string"
+                    },
+                    "explanation": {
+                        "type": "string"
+                    }
+                },
+                "additionalProperties": false
+            }
+        },
+        "pre_event_checks": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "required": [
+                    "check_name",
+                    "unique_id",
+                    "description",
+                    "condition",
+                    "effect"
+                ],
+                "properties": {
+                    "check_name": {
+                        "type": "string"
+                    },
+                    "unique_id": {
+                        "type": "string"
+                    },
+                    "description": {
+                        "type": "string"
+                    },
+                    "condition": {
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        }
+                    },
+                    "effect": {
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        }
+                    },
+                    "explanation": {
+                        "type": "string"
+                    }
+                },
+                "additionalProperties": false
+            }
+        },
+        "source": {
+            "type": "string"
+        }
+    },
+    "additionalProperties": false
+}

@@ -1,0 +1,46 @@
+{
+    "type": "object",
+    "properties": {
+        "openness": {
+            "type": "object",
+            "properties": {
+                "rate": { "type": "integer", "minimum": 1, "maximum": 5 },
+                "description": { "type": "string" }
+            },
+            "required": ["rate", "description"]
+        },
+        "conscientiousness": {
+            "type": "object",
+            "properties": {
+                "rate": { "type": "integer", "minimum": 1, "maximum": 5 },
+                "description": { "type": "string" }
+            },
+            "required": ["rate", "description"]
+        },
+        "extraversion": {
+            "type": "object",
+            "properties": {
+                "rate": { "type": "integer", "minimum": 1, "maximum": 5 },
+                "description": { "type": "string" }
+            },
+            "required": ["rate", "description"]
+        },
+        "agreeableness": {
+            "type": "object",
+            "properties": {
+                "rate": { "type": "integer", "minimum": 1, "maximum": 5 },
+                "description": { "type": "string" }
+            },
+            "required": ["rate", "description"]
+        },
+        "neuroticism": {
+            "type": "object",
+            "properties": {
+                "rate": { "type": "integer", "minimum": 1, "maximum": 5 },
+                "description": { "type": "string" }
+            },
+            "required": ["rate", "description"]
+        }
+    },
+    "required": ["openness", "conscientiousness", "extraversion", "agreeableness", "neuroticism"]
+}

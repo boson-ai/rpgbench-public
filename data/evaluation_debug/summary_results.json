@@ -1,0 +1,56 @@
+{
+    "LEN": 238.6,
+    "FAC": {
+        "align_ratio": 0.5902777777777778,
+        "contradict_ratio": 0.0,
+        "informative_ratio": 0.5902777777777778,
+        "align_relative": 1.0
+    },
+    "PER": {
+        "openness": 0.6666666666666665,
+        "conscientiousness": 0.5,
+        "extraversion": 0.6666666666666667,
+        "agreeableness": 0.8333333333333335,
+        "neuroticism": 0.4999999999999998,
+        "overall": 1.5583681535431797
+    },
+    "PERd": {
+        "openness": {
+            "rate": 4.5
+        },
+        "conscientiousness": {
+            "rate": 4.0
+        },
+        "extraversion": {
+            "rate": 4.0
+        },
+        "agreeableness": {
+            "rate": 3.5
+        },
+        "neuroticism": {
+            "rate": 3.5
+        },
+        "overall": {
+            "rate": 3.9
+        }
+    },
+    "INT": {
+        "interestingness": 3.5
+    },
+    "ACT": {
+        "action": 4.611111111111111
+    },
+    "MEC": {
+        "terminated_with_format_error": 0.0,
+        "num_rounds": 10.0,
+        "num_valid_rounds": 10.0,
+        "final_error_rate": 0.059469696969696964,
+        "final_error_rate_strict": 0.059469696969696964,
+        "final_error_free_rounds": 0.55,
+        "final_error_free_rounds_strict": 0.55,
+        "pre_event_check_error": 1.0,
+        "event_condition_check_error": 0.11249999999999999,
+        "var_update_error": 0.06590909090909092,
+        "var_update_error_strict": 0.06590909090909092
+    }
+}

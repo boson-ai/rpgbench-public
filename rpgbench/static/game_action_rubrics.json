@@ -1,0 +1,32 @@
+{
+    "Diversity": {
+        "description": "Diversity: Does the set of choices provide distinct and varied options for the player?",
+        "scores": {
+            "1": "The choices are nearly identical, offering no meaningful differences between them.",
+            "2": "The choices have slight variations but are mostly redundant, leading to a limited sense of variety.",
+            "3": "The choices exhibit some diversity but may still overlap in intent or outcome.",
+            "4": "The choices are mostly distinct and provide meaningful differences that allow the player to explore different paths.",
+            "5": "The choices are highly diverse, with each option offering unique and creative directions for the player."
+        }
+    },
+    "Relevance": {
+        "description": "Relevance: Are the choices appropriate and contextually aligned with the story and scene?",
+        "scores": {
+            "1": "The choices are entirely irrelevant, disconnected from the scene or story, and break immersion.",
+            "2": "The choices have limited relevance, with some alignment to the story but containing jarring or out-of-place elements.",
+            "3": "The choices are moderately relevant, generally aligning with the story but occasionally introducing inconsistencies.",
+            "4": "The choices are mostly relevant, fitting well within the context and contributing meaningfully to the story.",
+            "5": "The choices are fully relevant, seamlessly integrated into the story and enhancing the narrative experience."
+        }
+    },
+    "Understandability": {
+        "description": "Understandability: Are the choices clear, concise, and easy to understand for the player?",
+        "scores": {
+            "1": "The choices are confusing, overly complex, or poorly worded, making them difficult to interpret.",
+            "2": "The choices are somewhat understandable but may include ambiguous language or unnecessary complexity.",
+            "3": "The choices are moderately clear, with minor ambiguities that require some interpretation.",
+            "4": "The choices are clear and concise, easy to read, and free of significant ambiguity.",
+            "5": "The choices are exceptionally clear and well-written, making them effortless to understand and act upon."
+        }
+    }
+}

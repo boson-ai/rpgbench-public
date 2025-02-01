@@ -1,0 +1,29 @@
+{
+    "title": "Game Event Identification Output",
+    "type": "array",
+    "items": {
+        "type": "object",
+        "properties": {
+            "event_id": {
+                "type": "string",
+                "description": "The ID of the event from the predefined list."
+            },
+            "type": {
+                "type": "string",
+                "enum": ["Start", "End"],
+                "description": "Indicates whether the event starts or ends in the section."
+            },
+            "outcome": {
+                "type": "string",
+                "enum": ["N/A", "Success", "Failure"],
+                "description": "The outcome of the event. 'N/A' for 'Start' events, and 'Success' or 'Failure' for 'End' events."
+            },
+            "mention_description": {
+                "type": "string",
+                "description": "A brief description of the event's mention in the game section."
+            }
+        },
+        "required": ["event_id", "type", "outcome", "mention_description"],
+        "additionalProperties": false
+    }
+}

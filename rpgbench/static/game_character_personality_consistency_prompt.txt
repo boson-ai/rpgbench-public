@@ -1,0 +1,17 @@
+Assign a score from 1 to 5 to indicate how well the game narrative aligns with the main NPC’s personality traits:
+- Many Conflicts (1): The narrative frequently contradicts the NPC’s personality.
+- Some Conflicts (2): The narrative shows noticeable inconsistencies with the NPC’s personality.
+- Neutral (3): The narrative is only partially aligned or does not strongly reflect the NPC’s personality.
+- Strong Alignment (4): The narrative closely matches the NPC’s personality, with only minor deviations or uncertainties.
+- Perfect Alignment (5): The narrative flawlessly reflects the NPC’s personality in every aspect, with no contradictions.
+
+Please give one score for each personality trait, and provide a brief explanation for each score.
+
+Game narrative:
+{game_narrative}
+
+NPC personality:
+{npc_personality}
+
+Please return a score as a json object following this schema:
+{schema}

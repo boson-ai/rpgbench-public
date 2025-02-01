@@ -1,0 +1,84 @@
+{
+    "$defs": {
+        "GameValue": {
+            "type": "object",
+            "title": "GameValue",
+            "properties": {
+                "value_name": {
+                    "type": "string",
+                    "title": "Value Name",
+                    "description": "The value name."
+                },
+                "value_id": {
+                    "type": "string",
+                    "title": "Value ID",
+                    "description": "The unique value ID."
+                },
+                "current_value": {
+                    "title": "Current Value",
+                    "description": "The current value.",
+                    "anyOf": [
+                        {
+                            "type": "integer"
+                        },
+                        {
+                            "type": "number"
+                        },
+                        {
+                            "type": "string"
+                        },
+                        {
+                            "type": "boolean"
+                        }
+                    ]
+                }
+            },
+            "required": [
+                "value_id",
+                "current_value"
+            ]
+        }
+    },
+    "type": "object",
+    "title": "GameState",
+    "properties": {
+        "game_time": {
+            "type": "string",
+            "title": "Game Time",
+            "description": "The current in-game time."
+        },
+        "state_variables": {
+            "type": "array",
+            "title": "State Variables",
+            "description": "The current states of all game values.",
+            "items": {
+                "$ref": "#/$defs/GameValue"
+            }
+        },
+        "hidden_variables": {
+            "type": "array",
+            "title": "Hidden Variables",
+            "description": "The current states of all hidden game values.",
+            "items": {
+                "$ref": "#/$defs/GameValue"
+            }
+        },
+        "choices": {
+            "type": "array",
+            "title": "Choices",
+            "description": "Three different decisions for the player's character to make next, derived from the game plot.",
+            "items": {
+                "type": "string"
+            },
+            "minItems": 0,
+            "maxItems": 3,
+            "uniqueItems": true
+        }
+    },
+    "required": [
+        "game_time",
+        "state_variables",
+        "hidden_variables",
+        "choices"
+    ]
+}

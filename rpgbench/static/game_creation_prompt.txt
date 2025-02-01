@@ -1,0 +1,19 @@
+Here is a character description:
+{wikicontent}
+
+Based on this character, create a detailed game scenario exactly following JSON structure of previous examples and the following schema:
+{schema}
+
+## Guidelines
+- All numerical values should use consistent ranges (e.g., 0-100)
+- Events should have clear cause-and-effect relationships
+- Scene progression should depend on variable thresholds
+- Include both mandatory and optional events
+- Create meaningful connections between variables
+- Balance difficulty and achievability
+- Ensure all IDs follow consistent formatting (P### for checks, S### for scenes, V### for state variables, H### for hidden variables, E### for events)
+- Include proper fail states and success conditions
+- Make sure all scenes are specific locations
+- Create logical progression paths through the game
+
+Format the response as a single JSON object with all fields properly nested. Must ensure all arrays and objects are properly closed and formatted.

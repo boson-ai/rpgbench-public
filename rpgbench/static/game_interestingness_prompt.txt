@@ -1,0 +1,17 @@
+Your task is to evaluate the **interestingness** of the following game content. Please give a score from 1 (least interesting) to 5 (most interesting), with a brief explanation of your rationale.
+
+
+[[start of game content]]
+{game_content}
+[[end of game content]]
+
+Please return your evaluation score in a json dictionary with the following format:
+{schema}
+
+Example output:
+```json
+{{
+  "interestingness": 3,
+  "explanation": "The game content is moderately interesting, offering a few unique elements that keep the player engaged."
+}}
+```

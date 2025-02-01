@@ -1,0 +1,26 @@
+You are given a piece of narrative game content and a set of facts about a specific non-player character (NPC). Your task is to analyze whether each fact is supported, contradicted, or not addressed by the provided game content. For each fact, determine one of the following judgements based solely on the given game content:
+- "align": The game content supports or is consistent with the fact.
+- "contradict": The game content directly conflicts with or contradicts the fact.
+- "neutral": The game content is unrelated or does not provide enough information to judge the fact.
+Please disregard prior knowledge and analyze the NPC purely based on the game content and the facts.
+
+**NPC**: {npc}
+
+**Game Content**:
+
+{game_content}
+
+**Facts**
+
+{facts}
+
+**Output Format**:  
+Return the results as a JSON array, where each element is an object with:
+- fact_id: the corresponding fact’s ID.
+- judgement: one of "align", "contradict", or "neutral".
+- explanation: a brief explanation for your judgment, referencing specific parts of the game content if applicable.
+The return json array should follow this json schema:
+{schema}
+
+**Example Response**:
+{example}

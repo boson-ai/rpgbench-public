@@ -1,0 +1,42 @@
+[
+    {
+        "fact_id": 0,
+        "judgement": "neutral",
+        "explanation": "The game content does not address Bruce Wayne’s identity as Batman."
+    },
+    {
+        "fact_id": 1,
+        "judgement": "align",
+        "explanation": "Bruce’s emergence from the shadows and authoritative presence suggests a serious and brooding demeanor, which aligns with this fact’s description."
+    },
+    {
+        "fact_id": 2,
+        "judgement": "neutral",
+        "explanation": "The content does not mention Bruce’s intellect or detective skills."
+    },
+    {
+        "fact_id": 3,
+        "judgement": "neutral",
+        "explanation": "No martial arts abilities or fighting skills are depicted or mentioned."
+    },
+    {
+        "fact_id": 4,
+        "judgement": "contradict",
+        "explanation": "The content mentions his father talking to him, contradicting the fact that his parents are murdered."
+    },
+    {
+        "fact_id": 5,
+        "judgement": "neutral",
+        "explanation": "Alfred Pennyworth, the Joker, or other relationships are not mentioned."
+    },
+    {
+        "fact_id": 6,
+        "judgement": "neutral",
+        "explanation": "No information about his dual identity or billionaire playboy persona is provided."
+    },
+    {
+        "fact_id": 7,
+        "judgement": "neutral",
+        "explanation": "No information about his personal struggles, moral code, or inner demons is given."
+    }
+]

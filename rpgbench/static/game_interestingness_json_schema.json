@@ -1,0 +1,14 @@
+{
+  "type": "object",
+  "properties": {
+    "interestingness": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 5
+    },
+    "explanation": {
+      "type": "string"
+    }
+  },
+  "required": ["interestingness", "explanation"]
+}

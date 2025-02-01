@@ -1,0 +1,24 @@
+
+{
+    "title": "NPC Fact Alignment Results",
+    "type": "array",
+    "items": {
+        "type": "object",
+        "properties": {
+            "fact_id": {
+                "type": "integer",
+                "description": "The ID of the fact."
+            },
+            "judgement": {
+                "type": "string",
+                "enum": ["align", "contradict", "neutral"],
+                "description": "The judgement of the fact based on the game content."
+            },
+            "explanation": {
+                "type": "string",
+                "description": "A brief explanation for the judgement."
+            }
+        },
+        "required": ["fact_id", "judgement", "explanation"]
+    }
+}

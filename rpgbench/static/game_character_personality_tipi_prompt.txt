@@ -1,0 +1,30 @@
+You will be given information about a character. Here are a number of personality traits that may or may not apply to the character. Please write a number to each statement to indicate the extent to which you agree or disagree with that statement. You should rate the extent to which the pair of traits applies to the character, even if one characteristic applies more strongly than the other.
+
+For the ratings:
+- 1: Disagree strongly
+- 2: Disagree moderately
+- 3: Disagree a little
+- 4: Neither agree nor disagree
+- 5: Agree a little
+- 6: Agree moderately
+- 7: Agree strongly
+
+Please give your ratings for the following 10 statements.
+
+I see the character as:
+A. Extraverted, enthusiastic.
+B. Critical, quarrelsome.
+C. Dependable, self-disciplined.
+D. Anxious, easily upset.
+E. Open to new experiences, complex.
+F. Reserved, quiet.
+G. Sympathetic, warm.
+H. Disorganized, careless.
+I. Calm, emotionally stable.
+J. Conventional, uncreative
+
+Please return ratings for all 10 traits in a dictionary following this schema:
+{schema}
+
+Please give your ratings for the following character.
+{character}
