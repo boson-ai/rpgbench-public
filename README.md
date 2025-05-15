@@ -68,6 +68,10 @@ The task of game creation is to generate a game from a Wikipedia page about a ch
 We introduce the task of RPG game simulation. Games are in `data/games/games.jsonl`, which are all model-generated games in the Game Creation task with proper validity checks.
 ### Game Trajactories
 Game trajectories of various models are presented in `data/game_simulation_generation/`.
+
+### Hugging Face Dataset
+Datasets are also uploaded to [RPGBench on Hugging Face](https://huggingface.co/datasets/DongmingShenDS/RPGBench).
+
 ## Models
 
 We currently support API models for generation and evaluation. In order to use local models, we recommend one of the following options
